@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonPrivate Condition="$(PackageJsonPrivate) == ''">true</PackageJsonPrivate>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">microsoft.fluentui.aspnetcore.components.charts.assets</PackageJsonName>
+    <PackageJsonSource Condition="$(PackageJsonSource) == ''">src/index.ts</PackageJsonSource>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">dist/Microsoft.FluentUI.AspNetCore.Components.Charts.lib.module.js</PackageJsonMain>
+    <PackageJsonCssfiles Condition="$(PackageJsonCssfiles) == ''">../Charts/**/*.css</PackageJsonCssfiles>
+    <PackageJsonCssbundle Condition="$(PackageJsonCssbundle) == ''">dist/Microsoft.FluentUI.AspNetCore.Components.Charts.bundle.scp.css</PackageJsonCssbundle>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">node ./esbuild.config.mjs</PackageJsonScriptsBuild>
+    <PackageJsonScriptsTypeCheck Condition="$(PackageJsonScriptsTypeCheck) == ''">node ./scripts/type-check</PackageJsonScriptsTypeCheck>
+    <PackageJsonScriptsCompile Condition="$(PackageJsonScriptsCompile) == ''">node ./scripts/compile</PackageJsonScriptsCompile>
+    <PackageJsonScriptsClean Condition="$(PackageJsonScriptsClean) == ''">rimraf ./dist</PackageJsonScriptsClean>
+    <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint . --ext .ts</PackageJsonScriptsLint>
+    <PackageJsonScriptsLintFix Condition="$(PackageJsonScriptsLintFix) == ''">eslint . --ext .ts --fix</PackageJsonScriptsLintFix>
+    <PackageJsonScriptsFormat Condition="$(PackageJsonScriptsFormat) == ''">prettier -w src/**/*.{ts,html} --ignore-path ../../.prettierignore</PackageJsonScriptsFormat>
+    <PackageJsonScriptsFormatCheck Condition="$(PackageJsonScriptsFormatCheck) == ''">yarn format -c</PackageJsonScriptsFormatCheck>
+    <PackageJsonKeywords Condition="$(PackageJsonKeywords) == ''">[]</PackageJsonKeywords>
+    <PackageJsonAuthor Condition="$(PackageJsonAuthor) == ''"></PackageJsonAuthor>
+    <PackageJsonLicense Condition="$(PackageJsonLicense) == ''">ISC</PackageJsonLicense>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonDevdependenciesTypesD3Format Condition="$(PackageJsonDevdependenciesTypesD3Format) == ''">^3.0.4</PackageJsonDevdependenciesTypesD3Format>
+    <PackageJsonDevdependenciesTypesD3Selection Condition="$(PackageJsonDevdependenciesTypesD3Selection) == ''">^3.0.11</PackageJsonDevdependenciesTypesD3Selection>
+    <PackageJsonDevdependenciesTypesD3Shape Condition="$(PackageJsonDevdependenciesTypesD3Shape) == ''">^3.2.0</PackageJsonDevdependenciesTypesD3Shape>
+    <PackageJsonDevdependenciesTypesD3Scale Condition="$(PackageJsonDevdependenciesTypesD3Scale) == ''">^4.0.9</PackageJsonDevdependenciesTypesD3Scale>
+    <PackageJsonDevdependenciesTypesD3TimeFormat Condition="$(PackageJsonDevdependenciesTypesD3TimeFormat) == ''">^4.0.3</PackageJsonDevdependenciesTypesD3TimeFormat>
+    <PackageJsonDevdependenciesTypesD3Axis Condition="$(PackageJsonDevdependenciesTypesD3Axis) == ''">^3.0.6</PackageJsonDevdependenciesTypesD3Axis>
+    <PackageJsonDevdependenciesTypesD3Array Condition="$(PackageJsonDevdependenciesTypesD3Array) == ''">^3.2.2</PackageJsonDevdependenciesTypesD3Array>
+    <PackageJsonDevdependenciesTypesD3Hierarchy Condition="$(PackageJsonDevdependenciesTypesD3Hierarchy) == ''">^3.0.0</PackageJsonDevdependenciesTypesD3Hierarchy>
+    <PackageJsonDevdependenciesTypesD3Sankey Condition="$(PackageJsonDevdependenciesTypesD3Sankey) == ''">^0.12.0</PackageJsonDevdependenciesTypesD3Sankey>
+    <PackageJsonDevdependenciesEsbuild Condition="$(PackageJsonDevdependenciesEsbuild) == ''">0.28.2</PackageJsonDevdependenciesEsbuild>
+    <PackageJsonDevdependenciesEsbuildPluginInlineCss Condition="$(PackageJsonDevdependenciesEsbuildPluginInlineCss) == ''">0.0.1</PackageJsonDevdependenciesEsbuildPluginInlineCss>
+    <PackageJsonDevdependenciesGlob Condition="$(PackageJsonDevdependenciesGlob) == ''">^13.0.6</PackageJsonDevdependenciesGlob>
+    <PackageJsonDevdependenciesRimraf Condition="$(PackageJsonDevdependenciesRimraf) == ''">6.1.3</PackageJsonDevdependenciesRimraf>
+    <PackageJsonDependenciesFluentuiWebComponents Condition="$(PackageJsonDependenciesFluentuiWebComponents) == ''">^3.1.3</PackageJsonDependenciesFluentuiWebComponents>
+    <PackageJsonDependenciesMicrosoftFastElement Condition="$(PackageJsonDependenciesMicrosoftFastElement) == ''">^3.0.2</PackageJsonDependenciesMicrosoftFastElement>
+    <PackageJsonDependenciesMicrosoftFastWebUtilities Condition="$(PackageJsonDependenciesMicrosoftFastWebUtilities) == ''">^6.0.0</PackageJsonDependenciesMicrosoftFastWebUtilities>
+    <PackageJsonDependenciesD3Format Condition="$(PackageJsonDependenciesD3Format) == ''">^3.1.2</PackageJsonDependenciesD3Format>
+    <PackageJsonDependenciesD3Selection Condition="$(PackageJsonDependenciesD3Selection) == ''">^3.0.0</PackageJsonDependenciesD3Selection>
+    <PackageJsonDependenciesD3Shape Condition="$(PackageJsonDependenciesD3Shape) == ''">^3.2.0</PackageJsonDependenciesD3Shape>
+    <PackageJsonDependenciesD3Scale Condition="$(PackageJsonDependenciesD3Scale) == ''">^4.0.2</PackageJsonDependenciesD3Scale>
+    <PackageJsonDependenciesD3TimeFormat Condition="$(PackageJsonDependenciesD3TimeFormat) == ''">^4.1.0</PackageJsonDependenciesD3TimeFormat>
+    <PackageJsonDependenciesD3Axis Condition="$(PackageJsonDependenciesD3Axis) == ''">^3.0.0</PackageJsonDependenciesD3Axis>
+    <PackageJsonDependenciesD3Array Condition="$(PackageJsonDependenciesD3Array) == ''">^3.2.4</PackageJsonDependenciesD3Array>
+    <PackageJsonDependenciesD3Hierarchy Condition="$(PackageJsonDependenciesD3Hierarchy) == ''">^3.1.2</PackageJsonDependenciesD3Hierarchy>
+    <PackageJsonDependenciesD3Sankey Condition="$(PackageJsonDependenciesD3Sankey) == ''">^0.12.3</PackageJsonDependenciesD3Sankey>
+  </PropertyGroup>
+</Project>
